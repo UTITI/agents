@@ -6,3 +6,4 @@ pydantic<2.10
 streamlit
 python-dotenv
 numpy==1.26.4
+tiktoken==0.0.0

@@ -1,3 +1,4 @@
+onnxruntime==1.16.3
 crewai
 litellm
 streamlit

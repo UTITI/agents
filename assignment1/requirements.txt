@@ -1,5 +1,5 @@
 crewai==0.1.0
-litellm==1.37.0.post2
+litellm==1.37.0
 chromadb==0.5.23
 streamlit
 python-dotenv

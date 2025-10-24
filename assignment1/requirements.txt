@@ -1,5 +1,5 @@
 numpy==1.26.4
-crewai==0.1.0
+crewai==0.28.8
 chromadb==0.4.22
 streamlit
 python-dotenv

@@ -1,0 +1,12 @@
+[project]
+name = "workshop-solutions"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai==0.114.0",
+    "onnxruntime==1.17.3",
+    "python-dotenv>=1.1.1",
+    "streamlit>=1.50.0",
+]

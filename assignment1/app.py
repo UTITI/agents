@@ -31,7 +31,7 @@ def groq_chat(user_content: str, system_content: str) -> str:
         raise RuntimeError(f"Erro Groq ({resp.status_code}): {resp.text}")
     return resp.json()["choices"][0]["message"]["content"]
 
-# === (Mantemos o crewai: agents / tasks / crew, mas NÃO usamos LLM interno) ===
+# === (Agentes) ===
 prompt_structure_agent = Agent(
     role="Prompt Structure Agent",
     goal="Improve the structure, clarity, and completeness of user prompts.",
@@ -103,12 +103,12 @@ if st.button("Optimize Prompt"):
         with st.spinner("Optimizing for Groq LLaMA..."):
             final = groq_chat(
                 user_content=(
-                    "Take the structured prompt below and optimize it for a Groq LLaMA model. "
+                    "Take the structured prompt below and optimize it for a OpenAi GPT model. "
                     "Ensure clarity, token efficiency, and best practices. "
                     "Return ONLY the final prompt text (no explanations).\n\n"
                     f"{structured}"
                 ),
-                system_content="You optimize prompts for Groq LLaMA models.",
+                system_content="You optimize prompts for OpenAI GPT models.",
             )
 
         st.success("Prompt is optimized!")

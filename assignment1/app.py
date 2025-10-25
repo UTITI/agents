@@ -103,12 +103,12 @@ if st.button("Optimize Prompt"):
         with st.spinner("Optimizing for Groq LLaMA..."):
             final = groq_chat(
                 user_content=(
-                    "Take the structured prompt below and optimize it for a OpenAi GPT model. "
+                    "Take the structured prompt below and optimize it for a Groq LLaMA model. "
                     "Ensure clarity, token efficiency, and best practices. "
                     "Return ONLY the final prompt text (no explanations).\n\n"
                     f"{structured}"
                 ),
-                system_content="You optimize prompts for OpenAI GPT models.",
+                system_content="You optimize prompts for Groq LLaMA models.",
             )
 
         st.success("Prompt is optimized!")
